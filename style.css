@@ -323,3 +323,22 @@ ul { list-style: none; }
   .skills { grid-template-columns: 1fr; }
   .card { padding: 18px; }
 }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-top: 16px;
+}
+.shots img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.card p.shots-caption { font-size: 13px; margin-top: 6px; }
+@media (max-width: 600px) {
+  .shots { grid-template-columns: repeat(3, 1fr); }
+}
